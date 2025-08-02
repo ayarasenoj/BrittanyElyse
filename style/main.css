@@ -110,3 +110,11 @@ button {
   100% { transform: translateX(-50%) rotate(0deg); }
 }
 
+@media (max-width: 500px) {
+  .hammock-img {
+    opacity: 0.3;
+    animation: none;
+    width: 90%;
+  }
+}
+
