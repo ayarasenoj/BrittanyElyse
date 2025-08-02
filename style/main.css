@@ -7,9 +7,16 @@ body {
   scroll-behavior: smooth;
 }
 
-h1, h2 {
+h1 {
+  color: white; /* Make hero title pop */
   font-family: 'Playfair Display', serif;
-  color: #2f6f4e; /* Deep forest green */
+  font-size: 3rem;
+}
+
+h2 {
+  color: #2f6f4e; /* Keep h2s earthy green */
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
 }
 
 
