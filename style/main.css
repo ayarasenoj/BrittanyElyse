@@ -90,3 +90,23 @@ button {
   margin-top: 20px;
   opacity: 0.7;
 }
+
+.hammock-img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 700px;
+  opacity: 0.85;
+  animation: hammockSway 8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Swaying Animation */
+@keyframes hammockSway {
+  0%   { transform: translateX(-50%) rotate(0deg); }
+  50%  { transform: translateX(-50%) rotate(1.5deg); }
+  100% { transform: translateX(-50%) rotate(0deg); }
+}
+
