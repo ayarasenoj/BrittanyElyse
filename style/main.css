@@ -33,12 +33,15 @@ p {
 }
 
 .hero-overlay {
+  position: relative;  /* Required to layer over */
+  z-index: 2;
   background-color: rgba(0, 0, 0, 0.4);
   padding: 40px;
   border-radius: 15px;
   color: #fff;
   max-width: 90%;
 }
+
 
 .hero h1 {
   font-size: 3rem;
@@ -98,10 +101,12 @@ button {
   transform: translateX(-50%);
   width: 80%;
   max-width: 700px;
-  opacity: 0.85;
+  opacity: 0.6; /* Slight transparency for subtlety */
+  z-index: 1;  /* Put it behind the overlay */
   animation: hammockSway 8s ease-in-out infinite;
   pointer-events: none;
 }
+
 
 /* Swaying Animation */
 @keyframes hammockSway {
